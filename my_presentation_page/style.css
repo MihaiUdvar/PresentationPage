@@ -1,81 +1,89 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif ; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
   }
 
 .container-index{
-    background-image: url("images/drone_oslo_darkTheme.jpg");
+    background-image: url("../images/drone_oslo_darkTheme.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
 }
+
+
+
 /* .........RIGHT SIDE.......... */
-section{
-    display: inline-block;
-    float: right;  
+
+
+.box-section{
     margin-left: 40%;
-    margin-right: 10%; 
+    /* margin-right: auto;  */
     padding-top: 20em;
 }
 
 .heading{
-    font-size: 1.5em;
     color: white;
 }
 
-h2{
+h1{
+    font-size: 2em;
     padding-bottom: 0.5em;
 }
-
-.button {
+.container-btn{
+    display: flex;    
+}
+.box-btn {
     background-color: rgba(255, 255, 255, 0.2);   
     padding: 0.5em;
     border: 0.08em solid white;
     margin: 0.2em;
     text-align: center;
-    display: inline-block;
-    font-size: 20px;   
-    cursor: pointer;
-    
+    font-size: 1.4em;   
+    cursor: pointer;   
 }
 .buttonLink{
     color:white;
 }
 
+
 /* ................LEFT SIDE.......... */
 
-aside{
-    background-color: rgb(207, 95, 51, 0.8);   
+.box-aside{
+    flex: 5;
+    background-color: rgb(207, 95, 51, 0.9);   
     width: 25%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     padding-top: 4em;
+    /* display: inline-block; */
+    /* z-index: 1; */
 }
 
 .portrait{
-    padding-left: 5em;
     opacity: 1;
+    width: 15em;
+    margin: auto;
 }
-.my_pic{
-    border-radius: 50%; 
-    width: 200px;  
+div a img{
+    border-radius: 15em; 
+    width: 100%;
+    height: auto;   
 }
 
 .name{
+    font-size: 1.2em;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;   
 }
-
-p.thicker{
+   
+span{
     font-size: 1.5em;
     font-weight: bolder;
-}
-p.thinner{
-    font-weight: thin;
 }
 
 ul{
@@ -86,19 +94,20 @@ ul{
 }
 li{
     padding-bottom: 2em;
+    font-size: 1.2em;
 }
 li a{
     color: black;
 }
 
 .contact{
-    font-weight: lighter;
-    font-size: 0.9em;
-    padding-left: 2em;
+    width: 80%;
+    margin: auto;   
 }
-.social{
-    width: 2em;
-    height: 2em;
+.fab{
+    font-size: 30px;
+    color:white;
+    padding-right: 10px;
 }
 
 div a{
@@ -108,19 +117,24 @@ div a{
 .map{
     display: inline-block;
     font-size: 30px;
+    width: 10em;
     position: absolute;
-    /* float: left; */
-    width: 70%;
+    top: 3.9em;
+    right: 1em;
+    text-align: center;
+    /* margin-left: 80%; */
+    /* margin-top: 7.5%; */
+    /* width: 70%;
     padding-left: 43em;
-    padding-top: 3.9em;
+    padding-top: 3.9em; */
 }
-#locationPin{
-    width: 30px;
-    height: 30px;
-    padding-right: 10px;
-}
+
 .map a{
-    color: rgba(1, 4, 15, 0.5);
+    color: white;
+}
+
+a span{
+    font-size: 0.7em;
 }
 
 
@@ -130,8 +144,8 @@ div a{
 
 
 .container-contact { 
-    
-    background:url("images/6625.jpg") no-repeat center;
+
+    background:url("../images/6625.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -142,7 +156,6 @@ form { max-width:420px; margin:150px auto; }
 
 .feedback-input {
   color:white;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -164,7 +177,6 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background: rgb(207, 95, 51, 0.8);
   border-radius:5px;
@@ -177,6 +189,48 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#1d1818; }
+
+/* ------ABOUT ME STYLING--------------------------------------- */
+/* ------ABOUT ME STYLING--------------------------------------- */
+
+
+.container-aboutMe { 
+    background:url("images/0847.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.aboutMe {
+    
+    width: 40%;
+    display: inline-block;
+    margin-left: 10em;
+    margin-top: 20em;
+}
+
+.aboutMe p{
+    color: white;
+    display: inline-block;
+    text-align: justify;
+}
+
+.myPic{
+    /* height: 75%; */
+    width: 28%;
+    float: right;
+    margin-right: 5em;
+    margin-top:5em;
+    display: inline-block;
+}
+.myPic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3em; 
+}
+
+
 
 
 
