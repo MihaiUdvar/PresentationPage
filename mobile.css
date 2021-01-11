@@ -1,0 +1,338 @@
+
+/* MOBILE FOR INDEX.HTML */
+
+@media(max-width:500px) {
+    .container-index{
+        display: grid;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-template-rows: 10vh 30vh 60vh ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "contact         dropdown" 
+        "heading         heading"
+        "container-btn   container-btn"    
+        ;
+    }
+   
+    .contact{   
+        justify-self: start;
+        align-self: start;
+        grid-area: contact;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        background-color:rgb(207, 95, 51, 1);
+        width: 101%;
+        height: 100%;
+    }
+    
+    .dropdown{
+        background-color:  rgb(207, 95, 51, 1);
+        grid-area: dropdown;
+        display:block;
+        color: white;
+        text-align: right;
+        padding-right: 1vh;
+        padding-top: 1vh;
+        align-self: start;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+    .heading{
+        align-self: end;
+        justify-self: center;
+        grid-area: heading;
+        color: white;
+        padding-left: 0;
+    }
+
+    .container-btn{
+        justify-self: start;
+        grid-area: container-btn;
+        display: flex;
+        padding-left: 5vh;
+    }
+
+    h1{
+        font-size: 1.2em;
+        text-align: left;
+        padding-left: 5vh;
+    }
+
+    .btn {
+        background-color: rgba(255, 255, 255, 0.2);  
+        border: 2px solid white;
+        font-size: 2vh;          
+        margin-top: 1em;
+        cursor: none; 
+        display: inline-block;
+    }
+
+    @media (hover: none) {
+        .btn:hover { 
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            font-size: 2vh;          
+            margin-top: 1em;
+            cursor: none; 
+            display: inline-block;
+         }
+        .btn a:hover {color:white;}
+    }
+
+    .container-btn{
+        align-self: start;
+        justify-self: start;
+        grid-area: container-btn;
+        /* display: inline-block; */
+        padding-left: 5vh;
+    }
+   
+    .footer{display: none;}
+    .name{display:none}
+     ul{display:none} 
+    .contact p{display: none;}
+    .portrait{ display:none;}
+
+    .fab { 
+        font-size: 1.2em;
+        color:black;
+        padding-right: 0.5em;
+    }
+
+    /* DROPDOWN FOR INDEX.HTML*/
+    
+    .dropbtn {
+        font-size: 4vh;  
+        border: none;
+        outline: none;
+        color: black;
+        padding: 1vh 1vh;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      /* .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+       */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:  rgb(207, 95, 51, 1);
+        width: 50%;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:right;
+      }
+      
+      /* .dropdown-content a:hover {
+        background-color: #ddd;
+      } */
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+
+}
+
+/* MOBILE LANDSCAPE FOR INDEX.HTML*/
+
+@media(max-width:501px) {
+    .container-index{
+        display: grid;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-template-rows: 10vh 30vh 60vh ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "contact         dropdown" 
+        "heading         heading"
+        "container-btn   container-btn"    
+        ;
+    }
+   
+    .contact{   
+        justify-self: start;
+        align-self: start;
+        grid-area: contact;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        background-color:rgb(207, 95, 51, 1);
+        width: 101%;
+        height: 100%;
+    }
+    
+    .dropdown{
+        background-color:  rgb(207, 95, 51, 1);
+        grid-area: dropdown;
+        display:block;
+        color: white;
+        text-align: right;
+        padding-right: 1vh;
+        padding-top: 1vh;
+        align-self: start;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+    .heading{
+        align-self: end;
+        justify-self: center;
+        grid-area: heading;
+        color: white;
+        padding-left: 0;
+    }
+
+    .container-btn{
+        justify-self: start;
+        grid-area: container-btn;
+        display: flex;
+        padding-left: 5vh;
+    }
+
+    h1{
+        font-size: 1.2em;
+        text-align: left;
+        padding-left: 5vh;
+    }
+
+    .btn {
+        background-color: rgba(255, 255, 255, 0.2);  
+        border: 2px solid white;
+        font-size: 2vh;          
+        margin-top: 1em;
+        cursor: none; 
+        display: inline-block;
+    }
+
+    @media (hover: none) {
+        .btn:hover { 
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            font-size: 2vh;          
+            margin-top: 1em;
+            cursor: none; 
+            display: inline-block;
+         }
+        .btn a:hover {color:white;}
+    }
+
+    .container-btn{
+        align-self: start;
+        justify-self: start;
+        grid-area: container-btn;
+        padding-left: 5vh;
+    }
+   
+    .footer{display: none;}
+    .name{display:none}
+     ul{display:none} 
+    .contact p{display: none;}
+    .portrait{ display:none;}
+
+    .fab { 
+        font-size: 1.2em;
+        color:black;
+        padding-right: 0.5em;
+    }
+
+    /* DROPDOWN FOR INDEX.HTML*/
+    
+    .dropbtn {
+        font-size: 4vh;  
+        border: none;
+        outline: none;
+        color: black;
+        padding: 1vh 1vh;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:  rgb(207, 95, 51, 1);
+        width: 50%;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:right;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* MOBILE FOR aboutMe.HTML */
+
+@media(max-width:500px) {
+    .container-aboutMe{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aboutMe "  
+        "myPic"
+        ;
+    }
+    
+    .aboutMe{
+        grid-area: aboutMe;
+        justify-self: center;
+        padding-top: 2vh;  
+    }
+    .myPic{
+        grid-area: myPic;
+        background-image: url(images/8545.JPG);
+        background-size: cover;    
+        justify-self: center;
+        width: 60%;
+        height: 90%;
+        border-radius: 0.5em; 
+        align-self: start;
+    }
+
+    .aboutMe p{
+        width: 100%;
+        color: white;
+        font-size: 2vh;
+        padding:4vh
+    }
+
+/* MOBILE FOR PROJECTS:HTML */
+
+@media(max-width:500px){
+    .container-projects{
+        display: grid;
+        background:url("images/0534.JPG") no-repeat center;
+        background-size: cover;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "box-1"
+        "box-2"
+        "box-3"
+        "box-4 "
+        "box-5"   
+        "box-6"
+        ;    
+    }
+}

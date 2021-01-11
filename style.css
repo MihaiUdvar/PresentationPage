@@ -6,145 +6,170 @@
     box-sizing: border-box;
   }
 
+  /*--------- GRID LAYOUT--------- */
 .container-index{
+    display: grid;
+    height: 100vh;
     background-image: url("images/oslo_darkTheme.JPG");
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    grid-template-rows: 4fr 3fr 3fr 2.5fr 1fr;
+    grid-template-columns: 3fr 9fr;
+    grid-template-areas: 
+    "portrait  heading"
+    "name      heading"
+    "ul        container-btn"
+    "contact   container-btn"
+    "contact   footer"
+    ;
+    /* grid-gap: 0.2rem; */
 }
 
+.portrait{  
+    grid-area: portrait;
+    padding-top: 7vh;
+    background-color: rgb(207, 95, 51, 0.9); 
+}
+.name{   
+    grid-area: name;
+    background-color: rgb(207, 95, 51, 0.9);
+    font-size: 2.5vh;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;  
+}
 
+ul{
+    grid-area: ul;
+    list-style-type:none;
+    background-color: rgb(207, 95, 51, 0.9);
+}
 
-/* .........RIGHT SIDE.......... */
-
-
-.box-section{
-    margin-left: 40%;
-    /* margin-right: auto;  */
-    padding-top: 20em;
+.contact{
+    align-content: end;
+    grid-area: contact;
+    padding-left: 1em;
+    padding-top: 5vh;
+    background-color: rgb(207, 95, 51, 0.9); 
 }
 
 .heading{
+    padding-left: 14vh;
+    align-self: end;
+    justify-self: center;
+    grid-area: heading;
     color: white;
 }
+
+.container-btn{
+    align-self: start;
+    justify-self: start;
+    grid-area: container-btn;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 14vh;
+}
+
+.footer{
+    grid-area: footer;
+    align-self: start;
+    justify-self: end; 
+    padding-right: 5vh;  
+}
+
+/* ......RIGHT SIDE..... */
 
 h1{
     font-size: 2em;
     padding-bottom: 0.5em;
 }
-.container-btn{
-    display: flex;    
-}
-.box-btn {
+
+.btn{
     background-color: rgba(255, 255, 255, 0.2);   
-    padding: 0.5em;
+    padding: 0.2em;
     border: 0.08em solid white;
-    margin: 0.2em;
-    text-align: center;
     font-size: 1.4em;   
     cursor: pointer;   
+    margin: 0.2em;
 }
-.buttonLink{
-    color:white;
+.btn:hover {  
+    background-color: rgb(207, 95, 51, 0.7);
+    padding: 0.2em;
+    border: 0.08em solid white;
+    font-size: 1.4em;   
+    cursor: pointer;    
 }
-
-
-/* ................LEFT SIDE.......... */
-
-.box-aside{
-    flex: 5;
-    background-color: rgb(207, 95, 51, 0.9);   
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    padding-top: 4em;
-    /* display: inline-block; */
-    /* z-index: 1; */
+.btn a{
+    color:white
+}
+.btn a:hover {
+    color:black
 }
 
-.portrait{
-    opacity: 1;
-    width: 15em;
-    margin: auto;
-}
-div a img{
+/* .......LEFT SIDE....... */
+
+.me{
+    content: url(images/me.JPG);
     border-radius: 15em; 
-    width: 100%;
-    height: auto;   
+    width: 60%; 
+    margin: auto;  
 }
 
-.name{
-    font-size: 1.2em;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 2em;   
+.me:hover {
+    content: url(images/62654.jpg);
+    border-radius: 15em; 
+    width: 60%;
+    height: auto;   
 }
    
 span{
-    font-size: 1.5em;
+    font-size: 4vh;
     font-weight: bolder;
 }
 
-ul{
-    list-style-type:none;
-    padding-top: 3em;
-    padding-bottom: 2em;
-    padding-left: 2em;
-}
 li{
     padding-bottom: 2em;
-    font-size: 1.2em;
+    padding-left: 1em;
+    font-size: 1.5em;
 }
+li:hover {
+    transform: scale(1.1);
+    /* transform: translatex(20px); */
+}
+
 li a{
     color: black;
 }
 
-.contact{
-    width: 80%;
-    margin: auto;   
-}
-.fab{
-    font-size: 30px;
+.fab {
+    font-size: 2em;
     color:white;
-    padding-right: 10px;
+    padding-right: 0.7em;
 }
+.fab:hover {
+    transform: scale(1.2);
+    /* transform: translatex(20px); */
+}
+
 
 div a{
     text-decoration: none;
 }
 
-.map{
-    display: inline-block;
-    font-size: 30px;
-    width: 10em;
-    position: absolute;
-    top: 3.9em;
-    right: 1em;
-    text-align: center;
-    /* margin-left: 80%; */
-    /* margin-top: 7.5%; */
-    /* width: 70%;
-    padding-left: 43em;
-    padding-top: 3.9em; */
-}
-
-.map a{
+.footer a{
     color: white;
+    font-size: 2em;
+    width: 10em;  
 }
-
 a span{
     font-size: 0.7em;
 }
 
+.dropdown{display:none}
 
 
-/* ------CONTACT PAGE STYLING--------------------------------------- */
-/* ------CONTACT PAGE STYLING--------------------------------------- */
-
+/* ------CONTACT PAGE STYLING---------- */
 
 .container-contact { 
-
     background:url("images/6625.JPG") no-repeat center;
     background-size: cover;
     width: 100%;
@@ -152,7 +177,7 @@ a span{
     position: absolute;
 }
     
-form {max-width:25em; margin:150px auto; }
+form {width:50vh; margin:150px auto; }
 
 .feedback-input {
   color:white;
@@ -167,8 +192,6 @@ form {max-width:25em; margin:150px auto; }
   width:100%;
   box-sizing: border-box;
 }
-
-/* .feedback-input:focus { border:2px solid #CC4949; } */
 
 textarea {
   height: 150px;
@@ -190,103 +213,101 @@ textarea {
 }
 [type="submit"]:hover { background:#1d1818; }
 
-/* ------ABOUT ME STYLING--------------------------------------- */
-/* ------ABOUT ME STYLING--------------------------------------- */
 
+/* ------ABOUT ME STYLING--------- */
 
-.container-aboutMe { 
+.container-aboutMe{
+    display: grid;
+    height: 100vh;
     background:url("images/0847.JPG") no-repeat center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "aboutMe   myPic"
+    ;
 }
 
-.aboutMe {
-    
-    width: 40%;
-    display: inline-block;
-    margin-left: 10em;
-    margin-top: 20em;
+.aboutMe{
+    justify-self: center;
+    grid-area: aboutMe;
 }
-
-.aboutMe p{
-    color: white;
-    display: inline-block;
-    text-align: justify;
-}
-
 .myPic{
-    /* height: 75%; */
-    width: 28%;
-    float: right;
-    margin-right: 5em;
-    margin-top:5em;
-    display: inline-block;
+    grid-area: myPic;
+    background-image: url(images/8545.JPG);
+    background-size: cover;   
+    justify-self: center;
+    width: 40vh;
+    height: 65vh;
+    border-radius: 0.5em;
 }
-.myPic img{
-    height: 100%;
-    width: 100%;
-    border-radius: 3em; 
+.aboutMe p{
+    width: 80%;
+    color: white;
+    padding-left: 5vh; 
 }
 
 
-/* --------------PROJECTS PAGE------------ */
-/* --------------PROJECTS PAGE------------ */
-
-.preview{   
-    width: 80%;    
-}
+/* ------PROJECTS PAGE------------ */
 
 .container-projects{
-    background-image:url(images/0534.JPG);
+    display: grid;
+    background:url("images/0534.JPG") no-repeat center;
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-   
-}
-
-.container{
-    width: 70%;
-    margin: auto;
-}
-.container-1{
-    display: flex; 
-}
-
-/* TRIED RESPONSIVE BUT FAILED */
-
-/* @media (min-width:450px){
-.container-1{
-    display: flex; 
-    flex-wrap: wrap;
-} */
-
-.container-2{
-    height: 30px;
-    display: flex;    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "box-1   box-2"
+    "box-3   box-4"
+    "box-5   box-6"
+    ;    
 }
 
 .box-1 {
+    grid-area: box-1;
     color: white;
-    border-right: 5px solid white;
     margin:10px 0;
     text-align: center;  
 }
 .box-2 {
+    grid-area: box-2;
     color: white;
-    border-left: 5px solid white;  
     margin: 10px 0;
     text-align: center;
-
 }
 .box-3 {
-    border-right: 5px solid white;
-    width: 100%; 
+    grid-area: box-3;
+    color: white;
+    margin:10px 0;
+    text-align: center;  
 }
 .box-4 {
-    border-left: 5px solid white; 
-    width: 100%;   
+    grid-area: box-4;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+.box-5 {
+    grid-area: box-5;
+    color: white;
+    margin:10px 0;
+    text-align: center;  
+}
+.box-6 {
+    grid-area: box-6;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.box img{   
+    width: 70%;
+}
+
+.box p{
+    font-size: 2vh;
+    width:70%;
+    text-align: left;
+    margin: auto;
 }

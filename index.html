@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mihai Udvar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@100;400&display=swap" rel="stylesheet"> -->
+    
 
 </head>
 <body>
 
     <div class="container-index">
-
-        <!-- .........Left side section........... -->
-
-        <aside class="box-aside" >
             <div class="portrait">
-                <a href="index.html"><img src="images/me.JPG" alt="mugshot" ></a>
+                <div class="me"></div>
             </div>            
             <div class="name">
                 <p><span>MIHAI UDVAR</span><br> WEB DEVELOPER IN TRAINING</p>
             </div>
             <ul>
-                <li><a  href="aboutMe.html">ABOUT ME</a></li>
-                <li><a  href="contact.html" >CONTACT ME</a></li>
-                <li><a  href="https://www.dropbox.com/s/tuvsg14ocecnn07/CV_Mihai%20Udvar.pdf?dl=0" target="_blank">MY CV (PDF)</a></li>
+                <li><a class="btn-mobile" href="aboutMe.html">ABOUT ME</a></li>
+                <li><a class="btn-mobile" href="contact.html" >CONTACT ME</a></li>
+                <li><a class="btn-mobile" href="https://www.dropbox.com/s/tuvsg14ocecnn07/CV_Mihai%20Udvar.pdf?dl=0" target="_blank">MY CV (PDF)</a></li>
             </ul>
+
+            <!-- FOR MOBILE -->
+                
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a class="btn-mobile" href="aboutMe.html">ABOUT ME</a>
+                    <a class="btn-mobile" href="contact.html" >CONTACT ME</a>
+                    <a class="btn-mobile" href="https://www.dropbox.com/s/tuvsg14ocecnn07/CV_Mihai%20Udvar.pdf?dl=0" target="_blank">MY CV (PDF)</a>
+                </div>
+            </div>
+
             <div class="contact">
                 <div>
                     <p>GET IN TOUCH</p>
@@ -39,31 +47,28 @@
                     <a href="https://www.facebook.com/mihai.udvar" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/mihai-udvar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/ride_mihai_ride" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/MihaiUdvar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/MihaiUdvar" target="_blank"><i class="fab fa-github"></i></a>   
                 </div>
             </div>
-        </aside>
 
-        <!-- ...........Right side section.......... -->
-
-        <section class="box-section" >
             <div class="heading">
                 <h1>Hi, I'm Mihai, <br> a web developer in training at the Informal School of IT (informalschool.com)<h1>                     
             </div>
+            
             <div class="container-btn">
-                <div class="box-btn">
-                    <a class="buttonLink" href="projects.html" target="_blank">PORTFOLIO</a>
+                <div class="btn">
+                    <a href="projects.html" target="_blank">PORTFOLIO</a>
                 </div>           
-                <div class="box-btn">
-                    <a class="buttonLink" href="https://scoalainformala.ro/program/web-development-javascript/curriculum/c-2/" target="_blank">COURSE DESCRIPTION</a>
+                <div class="btn">
+                    <a href="https://scoalainformala.ro/program/web-development-javascript/curriculum/c-2/" target="_blank">COURSE DESCRIPTION</a>
                 </div> 
             </div>
-            
-            <!-- .........LOCATION ............. -->
-        <div class="map">
-            <a href="https://www.google.com/maps/place/Oslo/@59.8937806,10.6450358,11z/data=!3m1!4b1!4m5!3m4!1s0x46416e61f267f039:0x7e92605fd3231e9a!8m2!3d59.9138688!4d10.7522454" target="_blank"><i class="fas fa-map-marker-alt"></i><span>Here I am</span></a>
-        </div>
-        </section>     
+                
+            <div class="footer" >
+                <a  href="https://www.google.com/maps/place/Oslo/@59.8937806,10.6450358,11z/data=!3m1!4b1!4m5!3m4!1s0x46416e61f267f039:0x7e92605fd3231e9a!8m2!3d59.9138688!4d10.7522454" target="_blank"><i class="fas fa-map-marker-alt"></i><span>&nbsp LOCATED IN OSLO</span></a>
+            </div>
     </div>
+
+    
 </body>
 </html>
