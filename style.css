@@ -235,7 +235,7 @@ textarea {
 }
 .myPic{
     grid-area: myPic;
-    background: url("images/8545.jpg");
+    background-image: url("images/8545.jpg");
     background-size: cover;   
     justify-self: center;
     width: 40vh;
