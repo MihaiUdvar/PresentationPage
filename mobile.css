@@ -301,7 +301,7 @@
     }
     .myPic{
         grid-area: myPic;
-        background-image: url(images/8545.JPG);
+        background-image: url("images/8545.jpg");
         background-size: cover;    
         justify-self: center;
         width: 60%;
