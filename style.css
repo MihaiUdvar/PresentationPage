@@ -219,7 +219,7 @@ textarea {
 .container-aboutMe{
     display: grid;
     height: 100vh;
-    background:url("images/0847.JPG") no-repeat center;
+    background-image:url("images/0847.JPG");
     background-size: cover;
     align-items: center;
     grid-template-rows: 1fr;
@@ -235,7 +235,7 @@ textarea {
 }
 .myPic{
     grid-area: myPic;
-    background: url("images/8545.JPG");
+    background-image: url("images/8545.JPG");
     background-size: cover;   
     justify-self: center;
     width: 40vh;
