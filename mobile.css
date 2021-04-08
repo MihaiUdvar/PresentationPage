@@ -87,7 +87,6 @@
         align-self: start;
         justify-self: start;
         grid-area: container-btn;
-        /* display: inline-block; */
         padding-left: 5vh;
     }
    
@@ -301,7 +300,11 @@
     }
     .myPic{
         grid-area: myPic;
+<<<<<<< HEAD
         background-image: url("images/8545.jpg");
+=======
+       /* background-image: url(images/8545.JPG); */
+>>>>>>> 8f1679e4036ecc7d6aab2cf3a7aed75580b139ac
         background-size: cover;    
         justify-self: center;
         width: 60%;
