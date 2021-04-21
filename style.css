@@ -1,313 +1,315 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  box-sizing: border-box;
+}
 
-  /*--------- GRID LAYOUT--------- */
-.container-index{
-    display: grid;
-    height: 100vh;
-    background-image: url("images/oslo_darkTheme.JPG");
-    background-size: cover;
-    grid-template-rows: 4fr 3fr 3fr 2.5fr 1fr;
-    grid-template-columns: 3fr 9fr;
-    grid-template-areas: 
+/*--------- GRID LAYOUT--------- */
+.container-index {
+  display: grid;
+  height: 100vh;
+  background-image: url("images/drone_oslo_darkTheme .png");
+
+  background-size: cover;
+  grid-template-rows: 4fr 3fr 3fr 2.5fr 1fr;
+  grid-template-columns: 3fr 9fr;
+  grid-template-areas:
     "portrait  heading"
     "name      heading"
     "ul        container-btn"
     "contact   container-btn"
-    "contact   footer"
-    ;
-    /* grid-gap: 0.2rem; */
+    "contact   footer";
+  /* grid-gap: 0.2rem; */
 }
 
-.portrait{  
-    grid-area: portrait;
-    padding-top: 7vh;
-    background-color: rgb(207, 95, 51, 0.9); 
+.portrait {
+  grid-area: portrait;
+  padding-top: 7vh;
+  background-color: rgb(207, 95, 51, 0.9);
 }
-.name{   
-    grid-area: name;
-    background-color: rgb(207, 95, 51, 0.9);
-    font-size: 2.5vh;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 2em;  
-}
-
-ul{
-    grid-area: ul;
-    list-style-type:none;
-    background-color: rgb(207, 95, 51, 0.9);
+.name {
+  grid-area: name;
+  background-color: rgb(207, 95, 51, 0.9);
+  font-size: 2.5vh;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
-.contact{
-    align-content: end;
-    grid-area: contact;
-    padding-left: 1em;
-    padding-top: 5vh;
-    background-color: rgb(207, 95, 51, 0.9); 
+ul {
+  grid-area: ul;
+  list-style-type: none;
+  background-color: rgb(207, 95, 51, 0.9);
 }
 
-.heading{
-    padding-left: 14vh;
-    align-self: end;
-    justify-self: center;
-    grid-area: heading;
-    color: white;
+.contact {
+  align-content: end;
+  grid-area: contact;
+  padding-left: 1em;
+  padding-top: 5vh;
+  background-color: rgb(207, 95, 51, 0.9);
 }
 
-.container-btn{
-    align-self: start;
-    justify-self: start;
-    grid-area: container-btn;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 14vh;
+.heading {
+  margin-top: 15vh;
+  padding-left: 14vh;
+  padding-right: 5vh;
+  align-self: end;
+  justify-self: center;
+  grid-area: heading;
+  color: black;
 }
 
-.footer{
-    grid-area: footer;
-    align-self: start;
-    justify-self: end; 
-    padding-right: 5vh;  
+.container-btn {
+  align-self: start;
+  justify-self: start;
+  grid-area: container-btn;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 14vh;
+}
+
+.footer {
+  grid-area: footer;
+  align-self: start;
+  justify-self: end;
+  padding-right: 5vh;
 }
 
 /* ......RIGHT SIDE..... */
 
-h1{
-    font-size: 2em;
-    padding-bottom: 0.5em;
+h1 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
 }
 
-.btn{
-    background-color: rgba(255, 255, 255, 0.2);   
-    padding: 0.2em;
-    border: 0.08em solid white;
-    font-size: 1.4em;   
-    cursor: pointer;   
-    margin: 0.2em;
+.btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2em;
+  border: 0.08em solid white;
+  font-size: 1.4em;
+  cursor: pointer;
+  margin: 0.2em;
 }
-.btn:hover {  
-    background-color: rgb(207, 95, 51, 0.7);
-    padding: 0.2em;
-    border: 0.08em solid white;
-    font-size: 1.4em;   
-    cursor: pointer;    
+.btn:hover {
+  background-color: rgb(207, 95, 51, 0.7);
+  padding: 0.2em;
+  border: 0.08em solid white;
+  font-size: 1.4em;
+  cursor: pointer;
 }
-.btn a{
-    color:white
+.btn a {
+  color: white;
 }
 .btn a:hover {
-    color:black
+  color: black;
 }
 
 /* .......LEFT SIDE....... */
 
-.me{
-    content: url(images/me.JPG);
-    border-radius: 15em; 
-    width: 60%; 
-    margin: auto;  
+.me {
+  content: url(images/me.JPG);
+  border-radius: 15em;
+  width: 60%;
+  margin: auto;
 }
 
 .me:hover {
-    content: url(images/62654.jpg);
-    border-radius: 15em; 
-    width: 60%;
-    height: auto;   
-}
-   
-span{
-    font-size: 4vh;
-    font-weight: bolder;
+  content: url(images/62654.jpg);
+  border-radius: 15em;
+  width: 60%;
+  height: auto;
 }
 
-li{
-    padding-bottom: 2em;
-    padding-left: 1em;
-    font-size: 1.5em;
+span {
+  font-size: 4vh;
+  font-weight: bolder;
+}
+
+li {
+  padding-bottom: 2em;
+  padding-left: 1em;
+  font-size: 1.5em;
 }
 li:hover {
-    transform: scale(1.1);
-    /* transform: translatex(20px); */
+  transform: scale(1.1);
+  /* transform: translatex(20px); */
 }
 
-li a{
-    color: black;
+li a {
+  color: black;
 }
 
 .fab {
-    font-size: 2em;
-    color:white;
-    padding-right: 0.7em;
+  font-size: 2em;
+  color: white;
+  padding-right: 0.7em;
 }
 .fab:hover {
-    transform: scale(1.2);
-    /* transform: translatex(20px); */
+  transform: scale(1.2);
+  /* transform: translatex(20px); */
 }
 
-
-div a{
-    text-decoration: none;
+div a {
+  text-decoration: none;
 }
 
-.footer a{
-    color: white;
-    font-size: 2em;
-    width: 10em;  
+.footer a {
+  color: white;
+  font-size: 2em;
+  width: 10em;
 }
-a span{
-    font-size: 0.7em;
+a span {
+  font-size: 0.7em;
 }
 
-.dropdown{display:none}
-
+.dropdown {
+  display: none;
+}
 
 /* ------CONTACT PAGE STYLING---------- */
 
-.container-contact { 
-    background:url("images/6625.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.container-contact {
+  background: url("images/6625.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-    
-form {width:50vh; margin:150px auto; }
+
+form {
+  width: 50vh;
+  margin: 150px auto;
+}
 
 .feedback-input {
-  color:white;
-  font-weight:500;
+  color: white;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid black;
+  border: 2px solid black;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
 
 [type="submit"] {
   width: 100%;
   background: rgb(207, 95, 51, 0.8);
-  border-radius:5px;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 8px;
-  font-weight:700;
+  font-weight: 700;
 }
-[type="submit"]:hover { background:#1d1818; }
-
+[type="submit"]:hover {
+  background: #1d1818;
+}
 
 /* ------ABOUT ME STYLING--------- */
 
-.container-aboutMe{
-    display: grid;
-    height: 100vh;
-    background-image:url("images/0847.JPG");
-    background-size: cover;
-    align-items: center;
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "aboutMe   myPic"
-    ;
+.container-aboutMe {
+  display: grid;
+  height: 100vh;
+  background-image: url("images/0847.JPG");
+  background-size: cover;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "aboutMe   myPic";
 }
 
-.aboutMe{
-    justify-self: center;
-    grid-area: aboutMe;
+.aboutMe {
+  justify-self: center;
+  grid-area: aboutMe;
 }
-.myPic{
-    grid-area: myPic;
-    background-image: url("images/8545.jpg");
-    background-size: cover;   
-    justify-self: center;
-    width: 40vh;
-    height: 65vh;
-    border-radius: 0.5em;
+.myPic {
+  grid-area: myPic;
+  background-image: url("images/8545.jpg");
+  background-size: cover;
+  justify-self: center;
+  width: 40vh;
+  height: 65vh;
+  border-radius: 0.5em;
 }
-.aboutMe p{
-    width: 80%;
-    color: white;
-    padding-left: 5vh; 
+.aboutMe p {
+  width: 80%;
+  color: white;
+  padding-left: 5vh;
 }
-
 
 /* ------PROJECTS PAGE------------ */
 
-.container-projects{
-    display: grid;
-    background:url("images/0534.JPG") no-repeat center;
-    background-size: cover;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+.container-projects {
+  display: grid;
+  background: url("images/0534.JPG") no-repeat center;
+  background-size: cover;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "box-1   box-2"
     "box-3   box-4"
-    "box-5   box-6"
-    ;    
+    "box-5   box-6";
 }
 
 .box-1 {
-    grid-area: box-1;
-    color: white;
-    margin:10px 0;
-    text-align: center;  
+  grid-area: box-1;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
 }
 .box-2 {
-    grid-area: box-2;
-    color: white;
-    margin: 10px 0;
-    text-align: center;
+  grid-area: box-2;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
 }
 .box-3 {
-    grid-area: box-3;
-    color: white;
-    margin:10px 0;
-    text-align: center;  
+  grid-area: box-3;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
 }
 .box-4 {
-    grid-area: box-4;
-    color: white;
-    margin: 10px 0;
-    text-align: center;
+  grid-area: box-4;
+  color: black;
+  margin: 10px 0;
+  text-align: center;
 }
 .box-5 {
-    grid-area: box-5;
-    color: white;
-    margin:10px 0;
-    text-align: center;  
+  grid-area: box-5;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
 }
 .box-6 {
-    grid-area: box-6;
-    color: white;
-    margin: 10px 0;
-    text-align: center;
+  grid-area: box-6;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
 }
 
-.box img{   
-    width: 70%;
+.box img {
+  width: 70%;
 }
 
-.box p{
-    font-size: 2vh;
-    width:70%;
-    text-align: left;
-    margin: auto;
+.box p {
+  font-size: 2vh;
+  width: 70%;
+  text-align: left;
+  margin: auto;
 }
